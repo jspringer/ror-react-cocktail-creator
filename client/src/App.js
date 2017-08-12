@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Header, Segment, Button, Icon, Dimmer, Loader, Divider } from 'semantic-ui-react'
+import { Container, Header, Segment, Button, Icon, Dimmer, Loader, Divider, Rail } from 'semantic-ui-react'
 
 class App extends Component {
   constructor () {
@@ -34,6 +34,9 @@ class App extends Component {
     let {drinks, drink} = this.state
     return drinks
     ? <Container text>
+        <Rail position='right' size='small'>
+          <Segment><Link to="admin/">Admin Login</Link></Segment>
+        </Rail>
         <Header as='h2' icon textAlign='center'>
         <Icon name='cocktail' circular />
         <Header.Content>
