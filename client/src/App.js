@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router';
 import { Container, Header, Segment, Button, Icon, Dimmer, Loader, Divider, Rail } from 'semantic-ui-react'
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
     return drinks
     ? <Container text>
         <Rail position='right' size='small'>
-          <Segment>`<a href="admin/">Admin Login</a>`</Segment>
+          <Segment><Link to="/admin">Admin Login</Link></Segment>
         </Rail>
         <Header as='h2' icon textAlign='center'>
         <Icon name='cocktail' circular />
